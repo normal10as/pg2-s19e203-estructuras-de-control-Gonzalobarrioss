@@ -19,29 +19,29 @@ Module NombreMes
         Console.WriteLine("Ingrese un numero de mes")
         numero_mes = Console.ReadLine()
         Select Case numero_mes
-            Case 1
+            Case Meses.enero
                 Console.WriteLine("Mes de enero")
-            Case 2
+            Case Meses.febrero
                 Console.WriteLine("Mes de febrero")
-            Case 3
+            Case Meses.marzo
                 Console.WriteLine("Mes de marzo")
-            Case 4
+            Case Meses.abril
                 Console.WriteLine("Mes de abril")
-            Case 5
+            Case Meses.mayo
                 Console.WriteLine("Mes de mayo")
-            Case 6
+            Case Meses.junio
                 Console.WriteLine("Mes de junio")
-            Case 7
+            Case Meses.julio
                 Console.WriteLine("Mes de julio")
-            Case 8
+            Case Meses.agosto
                 Console.WriteLine("Mes de agosto")
-            Case 9
+            Case Meses.septiembre
                 Console.WriteLine("Mes de septiembre")
-            Case 10
+            Case Meses.octubre
                 Console.WriteLine("Mes de octubre")
-            Case 11
+            Case Meses.noviembre
                 Console.WriteLine("Mes de noviembre")
-            Case 12
+            Case Meses.diciembre
                 Console.WriteLine("Mes de diciembre")
             Case Else
                 Console.WriteLine("Valor invalido, no corresponde a ningun mes.")

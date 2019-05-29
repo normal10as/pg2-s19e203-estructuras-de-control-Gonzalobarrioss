@@ -8,11 +8,11 @@ Module Comparar
         Console.WriteLine("Ingrese otro numero: ")
         num2 = Console.ReadLine()
         If num1 > num2 Then
-            Console.WriteLine(num1 & " es mayor")
+            Console.WriteLine("el numero {0} es mayor que {1}", num1, num2)
         ElseIf num1 = num2 Then
             Console.WriteLine("Los numeros son iguales.")
         Else
-            Console.WriteLine(num2 & " es mayor")
+            Console.WriteLine("el numero {0} es menor que {1}", num1, num2)
         End If
     End Sub
 End Module

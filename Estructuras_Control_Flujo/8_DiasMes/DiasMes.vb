@@ -21,9 +21,9 @@ Module DiasMes
         Console.Write("Ingrese numero de mes: ")
         Mes = Console.ReadLine()
         Select Case Mes
-            Case 1
+            Case DiasMeses.enero
                 Console.WriteLine("Tiene 31 dias")
-            Case 2
+            Case DiasMeses.febrero
                 Console.Write("Ingrese año: ")
                 año = Console.ReadLine()
                 If (año Mod 4 = 0 And año Mod 100 <> 0 Or año Mod 400 = 0) Then
@@ -31,26 +31,28 @@ Module DiasMes
                 Else
                     Console.WriteLine("Tiene 28 dias")
                 End If
-            Case 3
-                    Console.WriteLine("Tiene 31 dias")
-            Case 4
-                Console.WriteLine("Tiene 30 dias")
-            Case 5
+            Case DiasMeses.marzo
                 Console.WriteLine("Tiene 31 dias")
-            Case 6
+            Case DiasMeses.abril
                 Console.WriteLine("Tiene 30 dias")
-            Case 7
-                Console.WriteLine("Tiene 30 dias")
-            Case 8
+            Case DiasMeses.mayo
                 Console.WriteLine("Tiene 31 dias")
-            Case 9
+            Case DiasMeses.junio
                 Console.WriteLine("Tiene 30 dias")
-            Case 10
-                Console.WriteLine("Tiene 31 dias")
-            Case 11
+            Case DiasMeses.julio
                 Console.WriteLine("Tiene 30 dias")
-            Case 12
+            Case DiasMeses.agosto
                 Console.WriteLine("Tiene 31 dias")
+            Case DiasMeses.septiembre
+                Console.WriteLine("Tiene 30 dias")
+            Case DiasMeses.octubre
+                Console.WriteLine("Tiene 31 dias")
+            Case DiasMeses.noviembre
+                Console.WriteLine("Tiene 30 dias")
+            Case DiasMeses.diciembre
+                Console.WriteLine("Tiene 31 dias")
+            Case Else
+                Console.WriteLine("No existe ese mes.")
         End Select
     End Sub
 End Module

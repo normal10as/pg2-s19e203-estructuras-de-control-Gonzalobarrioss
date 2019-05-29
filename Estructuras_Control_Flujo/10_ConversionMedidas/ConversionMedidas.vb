@@ -1,9 +1,8 @@
 Imports System
-Module Program
+Module ConversionMedidas
     Private pie, pulgadas, yardas, centimetros, metros As Single
     Sub Main(args As String())
         Dim conversion As Single
-        Menu()
         Select Case Menu()
             Case 1
                 Console.WriteLine("Ingrese numero para convertir")
@@ -54,7 +53,7 @@ Module Program
     Sub conversion_pulgadas(conversion)
         pie = conversion / 12
         yardas = pie / 3
-        centimetros = pulgadas * 2.54
+        centimetros = conversion * 2.54
         metros = centimetros * 100
         Console.WriteLine("Equivalencias:")
         Console.WriteLine("de pulgadas a pie: " & pie)
@@ -77,7 +76,7 @@ Module Program
         pulgadas = conversion * 2.54
         pie = pulgadas / 12
         yardas = pie / 3
-        metros = centimetros * 100
+        metros = conversion / 100
         Console.WriteLine("Equivalencias:")
         Console.WriteLine("de centimetros a pie: " & pie)
         Console.WriteLine("de centimetros a yardas: " & yardas)
@@ -85,7 +84,7 @@ Module Program
         Console.WriteLine("de centimetros a metros: " & metros)
     End Sub
     Sub conversion_metros(conversion)
-        centimetros = conversion / 100
+        centimetros = conversion * 100
         pulgadas = centimetros * 2.54
         pie = pulgadas / 12
         yardas = pie / 3
