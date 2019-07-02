@@ -6,7 +6,7 @@ Module Angulo
         Console.Write("Ingrese grado de angulo: ")
         grado_angulo = Console.ReadLine()
         Select Case grado_angulo
-            Case 0 To 89
+            Case 1 To 89
                 Console.WriteLine("Angulo agudo")
             Case = 90
                 Console.WriteLine("Angulo recto")

@@ -43,7 +43,7 @@ Module ConversionMedidas
         pulgadas = conversion * 12
         yardas = conversion / 3
         centimetros = pulgadas * 2.54
-        metros = centimetros * 100
+        metros = centimetros / 100
         Console.WriteLine("Equivalencias:")
         Console.WriteLine("de pie a pulgadas: " & pulgadas)
         Console.WriteLine("de pie a yardas: " & yardas)
@@ -54,7 +54,7 @@ Module ConversionMedidas
         pie = conversion / 12
         yardas = pie / 3
         centimetros = conversion * 2.54
-        metros = centimetros * 100
+        metros = centimetros / 100
         Console.WriteLine("Equivalencias:")
         Console.WriteLine("de pulgadas a pie: " & pie)
         Console.WriteLine("de pulgadas a yardas: " & yardas)
@@ -65,7 +65,7 @@ Module ConversionMedidas
         pie = conversion * 3
         pulgadas = pie * 12
         centimetros = pulgadas * 2.54
-        metros = centimetros * 100
+        metros = centimetros / 100
         Console.WriteLine("Equivalencias:")
         Console.WriteLine("de yardas a pie: " & pie)
         Console.WriteLine("de yardas a pulgadas: " & pulgadas)
@@ -73,7 +73,7 @@ Module ConversionMedidas
         Console.WriteLine("de yardas a metros: " & metros)
     End Sub
     Sub conversion_centimetros(conversion)
-        pulgadas = conversion * 2.54
+        pulgadas = conversion / 2.54
         pie = pulgadas / 12
         yardas = pie / 3
         metros = conversion / 100
@@ -85,7 +85,7 @@ Module ConversionMedidas
     End Sub
     Sub conversion_metros(conversion)
         centimetros = conversion * 100
-        pulgadas = centimetros * 2.54
+        pulgadas = centimetros / 2.54
         pie = pulgadas / 12
         yardas = pie / 3
         Console.WriteLine("Equivalencias:")
