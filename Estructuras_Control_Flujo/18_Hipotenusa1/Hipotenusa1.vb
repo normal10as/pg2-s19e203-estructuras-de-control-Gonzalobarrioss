@@ -1,7 +1,7 @@
 Imports System.Math
 
 Module Hipotenusa
-    Private A, B As Integer
+    Private A, B, C, D As Single
     Sub Main(args As String())
         While ValidarDatos()
         End While
@@ -16,12 +16,15 @@ Module Hipotenusa
         Console.WriteLine("Ingresar unicamente enteros positivos")
         Console.WriteLine("Ingrese valor del lado A: ")
         A = Console.ReadLine()
+        C = Truncate(A)
         Console.WriteLine("Ingrese valor del lado B: ")
         B = Console.ReadLine()
-        If A > 0 And B > 0 Then
+        D = Truncate(B)
+        If A > 0 And B > 0 And A - C = 0 And B - D = 0 Then
             Return 0
         Else
             Return 1
+
         End If
     End Function
 End Module

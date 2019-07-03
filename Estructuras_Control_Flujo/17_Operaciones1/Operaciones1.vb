@@ -20,21 +20,6 @@ Module Operaciones1
         Resultado(Operaciones.division, 10, 5)
         Resultado(Operaciones.division, 10, 5, 2)
         Resultado(Operaciones.division, 10, 5, 2, 1)
-        Console.WriteLine(Calcular(Operaciones.suma, 5, 8))
-        Console.WriteLine(Calcular(Operaciones.suma, 5, 8, 7))
-        Console.WriteLine(Calcular(Operaciones.suma, 5, 8, 7, 1))
-        Console.WriteLine(Calcular(Operaciones.resta, 8, 5))
-        Console.WriteLine(Calcular(Operaciones.resta, 5, 4, 1))
-        Console.WriteLine(Calcular(Operaciones.resta, 10, 4, 1, 1))
-        Console.WriteLine(Calcular(Operaciones.multiplicacion, 2, 2))
-        Console.WriteLine(Calcular(Operaciones.multiplicacion, 2, 2, 2))
-        Console.WriteLine(Calcular(Operaciones.multiplicacion, 2, 2, 2, 2))
-        Console.WriteLine(Calcular(Operaciones.division, 10, 2))
-        Console.WriteLine(Calcular(Operaciones.division, 10, 2, 5))
-        Console.WriteLine(Calcular(Operaciones.division, 10, 1, 2, 1))
-        Console.WriteLine(Calcular(2, 1))
-        Console.WriteLine(Calcular(1, 2, 1))
-        Console.WriteLine(Calcular(10, 1, 2, 1))
     End Sub
 
     Function Calcular(elegir As Operaciones, num1 As Decimal, num2 As Integer) As Operaciones
